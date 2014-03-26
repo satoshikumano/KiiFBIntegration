@@ -6,12 +6,16 @@
 //  Copyright (c) 2014年 Kii. All rights reserved.
 //
 
+#import <KiiSDK/Kii.h>
+#import "Const.h"
 #import "KiiFBAppDelegate.h"
 
 @implementation KiiFBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Kii beginWithID:kMyKiiAppId andKey:kMyKiiAppKey andSite:kMyKiiSite];
+    [Kii setLogLevel:3];
     // Override point for customization after application launch.
     return YES;
 }
@@ -41,6 +45,14 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    
+    return [KiiSocialConnect handleOpenURL:url];
 }
 
 @end

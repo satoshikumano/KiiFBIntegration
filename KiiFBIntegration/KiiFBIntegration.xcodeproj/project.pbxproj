@@ -19,8 +19,10 @@
 		74CB23D518E2BF32006CDFB7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CB23D418E2BF32006CDFB7 /* XCTest.framework */; };
 		74CB23D618E2BF32006CDFB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CB23B518E2BF32006CDFB7 /* Foundation.framework */; };
 		74CB23D718E2BF32006CDFB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CB23B918E2BF32006CDFB7 /* UIKit.framework */; };
-		74CB23DF18E2BF32006CDFB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74CB23DD18E2BF32006CDFB7 /* InfoPlist.strings */; };
-		74CB23E118E2BF32006CDFB7 /* KiiFBIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CB23E018E2BF32006CDFB7 /* KiiFBIntegrationTests.m */; };
+		74CB23EB18E2BFBA006CDFB7 /* KiiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CB23EA18E2BFBA006CDFB7 /* KiiSDK.framework */; };
+		74CB23ED18E2BFCE006CDFB7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CB23EC18E2BFCE006CDFB7 /* Accounts.framework */; };
+		74CB23EF18E2BFD5006CDFB7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CB23EE18E2BFD5006CDFB7 /* Social.framework */; };
+		74CB23F118E2BFE1006CDFB7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CB23F018E2BFE1006CDFB7 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +52,11 @@
 		74CB23CD18E2BF32006CDFB7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		74CB23D318E2BF32006CDFB7 /* KiiFBIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiiFBIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CB23D418E2BF32006CDFB7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		74CB23DC18E2BF32006CDFB7 /* KiiFBIntegrationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KiiFBIntegrationTests-Info.plist"; sourceTree = "<group>"; };
-		74CB23DE18E2BF32006CDFB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		74CB23E018E2BF32006CDFB7 /* KiiFBIntegrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KiiFBIntegrationTests.m; sourceTree = "<group>"; };
+		74CB23EA18E2BFBA006CDFB7 /* KiiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KiiSDK.framework; sourceTree = "<group>"; };
+		74CB23EC18E2BFCE006CDFB7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		74CB23EE18E2BFD5006CDFB7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		74CB23F018E2BFE1006CDFB7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		74CB23F218E2C057006CDFB7 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +64,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74CB23F118E2BFE1006CDFB7 /* MobileCoreServices.framework in Frameworks */,
+				74CB23EF18E2BFD5006CDFB7 /* Social.framework in Frameworks */,
+				74CB23ED18E2BFCE006CDFB7 /* Accounts.framework in Frameworks */,
 				74CB23B818E2BF32006CDFB7 /* CoreGraphics.framework in Frameworks */,
 				74CB23BA18E2BF32006CDFB7 /* UIKit.framework in Frameworks */,
 				74CB23B618E2BF32006CDFB7 /* Foundation.framework in Frameworks */,
+				74CB23EB18E2BFBA006CDFB7 /* KiiSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				74CB23BB18E2BF32006CDFB7 /* KiiFBIntegration */,
-				74CB23DA18E2BF32006CDFB7 /* KiiFBIntegrationTests */,
 				74CB23B418E2BF32006CDFB7 /* Frameworks */,
 				74CB23B318E2BF32006CDFB7 /* Products */,
 			);
@@ -101,6 +108,9 @@
 		74CB23B418E2BF32006CDFB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				74CB23F018E2BFE1006CDFB7 /* MobileCoreServices.framework */,
+				74CB23EE18E2BFD5006CDFB7 /* Social.framework */,
+				74CB23EC18E2BFCE006CDFB7 /* Accounts.framework */,
 				74CB23B518E2BF32006CDFB7 /* Foundation.framework */,
 				74CB23B718E2BF32006CDFB7 /* CoreGraphics.framework */,
 				74CB23B918E2BF32006CDFB7 /* UIKit.framework */,
@@ -112,6 +122,8 @@
 		74CB23BB18E2BF32006CDFB7 /* KiiFBIntegration */ = {
 			isa = PBXGroup;
 			children = (
+				74CB23F218E2C057006CDFB7 /* Const.h */,
+				74CB23EA18E2BFBA006CDFB7 /* KiiSDK.framework */,
 				74CB23C418E2BF32006CDFB7 /* KiiFBAppDelegate.h */,
 				74CB23C518E2BF32006CDFB7 /* KiiFBAppDelegate.m */,
 				74CB23C718E2BF32006CDFB7 /* Main.storyboard */,
@@ -130,24 +142,6 @@
 				74CB23BE18E2BF32006CDFB7 /* InfoPlist.strings */,
 				74CB23C118E2BF32006CDFB7 /* main.m */,
 				74CB23C318E2BF32006CDFB7 /* KiiFBIntegration-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		74CB23DA18E2BF32006CDFB7 /* KiiFBIntegrationTests */ = {
-			isa = PBXGroup;
-			children = (
-				74CB23E018E2BF32006CDFB7 /* KiiFBIntegrationTests.m */,
-				74CB23DB18E2BF32006CDFB7 /* Supporting Files */,
-			);
-			path = KiiFBIntegrationTests;
-			sourceTree = "<group>";
-		};
-		74CB23DB18E2BF32006CDFB7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				74CB23DC18E2BF32006CDFB7 /* KiiFBIntegrationTests-Info.plist */,
-				74CB23DD18E2BF32006CDFB7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -239,7 +233,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74CB23DF18E2BF32006CDFB7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74CB23E118E2BF32006CDFB7 /* KiiFBIntegrationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,14 +281,6 @@
 				74CB23C818E2BF32006CDFB7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		74CB23DD18E2BF32006CDFB7 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74CB23DE18E2BF32006CDFB7 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -377,6 +361,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KiiFBIntegration",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KiiFBIntegration/KiiFBIntegration-Prefix.pch";
 				INFOPLIST_FILE = "KiiFBIntegration/KiiFBIntegration-Info.plist";
@@ -390,6 +378,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KiiFBIntegration",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KiiFBIntegration/KiiFBIntegration-Prefix.pch";
 				INFOPLIST_FILE = "KiiFBIntegration/KiiFBIntegration-Info.plist";
