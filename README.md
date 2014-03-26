@@ -2,7 +2,8 @@ KiiFBIntegration
 ================
 
 ## What is it
-Silly sample app to test Kii-Facebook Integration
+Simple sample app to test Kii-Facebook Integration.
+(Results only showed in cosole.)
 
 ## How to use it
 - Edit Const.h and replace application info with yours.
